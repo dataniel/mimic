@@ -1,0 +1,47 @@
+url: ~
+template:
+  bootstrap: 5
+
+reference:
+- title: The workflow
+  desc: From the real data to released output, in order.
+  contents:
+  - mimic-package
+  - mimic_config
+  - profile_data
+  - mimic
+  - mess_options
+  - trial_run
+  - real_run
+  - inspect
+  - write_report
+  - record_release
+
+- title: Safe output
+  desc: For the researcher's script, so output passes the inspection.
+  contents:
+  - safe_output
+  - safe_count
+  - safe_summary
+  - safe_model
+  - describe_output
+
+- title: Checks
+  desc: The rules behind the inspection, usable on their own.
+  contents:
+  - checks
+  - check_min_count
+  - check_k_anonymity
+  - check_dominance
+  - check_extremes
+  - check_model
+  - check_differencing
+  - check_suppression
+  - check_group_disclosure
+  - check_keys
+  - check_all
+
+- title: Example data
+  desc: Invented data for a small population.
+  contents:
+  - fake_data

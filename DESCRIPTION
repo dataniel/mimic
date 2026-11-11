@@ -1,0 +1,32 @@
+Package: mimic
+Title: Synthetic Data and Output Control for Small Populations
+Version: 0.0.0.9000
+Authors@R:
+    person("Daniel", "Minik", , "danielminik@icloud.com", role = c("aut", "cre"))
+Description: Supports remote execution on register data about small
+    populations. Describe a dataset with disclosure protection applied
+    before anything is stored, build a synthetic copy from that
+    description, test a researcher's script on the copy, run it on the real
+    data in an isolated session with a safe error report, and check the
+    output before release. Defaults are stricter than in tools designed for
+    large countries.
+License: MIT + file LICENSE
+Encoding: UTF-8
+Roxygen: list(markdown = TRUE)
+RoxygenNote: 8.0.0
+Depends:
+    R (>= 4.1.0)
+Imports:
+    callr,
+    cli,
+    stats,
+    tools,
+    utils
+Suggests:
+    knitr,
+    rmarkdown,
+    rpart,
+    testthat (>= 3.0.0)
+Config/testthat/edition: 3
+LazyData: true
+VignetteBuilder: knitr
